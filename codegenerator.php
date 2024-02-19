@@ -68,13 +68,13 @@ if (isset($_POST['email']) && !empty($_POST['email'])) {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com'; // SMTP server
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'shedrackwambua40@gmail.com'; // SMTP username
-            $mail->Password   = 'veci dzsg swpj xbxo';   // SMTP password
+            $mail->Username   = 'your@gmail.com'; // SMTP username
+            $mail->Password   = '***************';   // SMTP password
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
 
             //Recipients
-            $mail->setFrom('shedrackwambua40@gmail.com', 'RACK');
+            $mail->setFrom('your@gmail.com', 'RACK');
             $mail->addAddress($email, $surname);
 
             // Content

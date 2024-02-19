@@ -38,10 +38,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Hash the password
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+  //  $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     // SQL query to insert data into the database
-    $sql = "INSERT INTO members (first_name, surname, phone_no, gender, email, password) VALUES ('$first_name', '$surname', '$phone_no', '$selected_gender', '$email', '$hashed_password')";
+    $sql = "INSERT INTO members (first_name, surname, phone_no, gender, email, password) VALUES ('$first_name', '$surname', '$phone_no', '$selected_gender', '$email', '$password')";
 
     // Execute the query
     if ($conn->query($sql) === TRUE) {

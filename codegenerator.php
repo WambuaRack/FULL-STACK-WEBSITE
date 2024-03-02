@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mail->Host       = 'smtp.gmail.com'; // SMTP server
                 $mail->SMTPAuth   = true;
                 $mail->Username   = 'shedrackwambua40@gmail.com'; // SMTP username
-                $mail->Password   = 'hgxw sqzt rzcw xpgx';   // SMTP password
+                $mail->Password   = 'xxxxxxxxxx';   // SMTP password
                 $mail->SMTPSecure = 'tls';
                 $mail->Port       = 587;
 
